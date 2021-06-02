@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+      <h1>Calculator</h1>
+       <div class="card">
+         <form name="Calculator">
+          <div class="calchead">
+              <input type="text" name="display" id="inputbox" maxlength="10px" >
+          </div>
+            <div class="calcbody">
+               <input type="button" id="calcbtn" value="C"  onclick="Calculator.display.value = '' ">
+               <input type="button" id="calcbtn" value="&radic;" onclick=" Calculator.display.value = Math.sqrt (Calculator.display.value)">
+               <input type="button" id="calcbtn" value="%" onclick="Calculator.display.value = eval(Calculator.display.value)/100">
+               <input type="button" id="calcbtn" style="background: blue;"  value="/"  onclick="Calculator.display.value += '/' ">
+           </div>
+           <div class="calcbody">
+            <input type="button" id="calcbtn" value="7" onclick="Calculator.display.value += '7' ">
+            <input type="button" id="calcbtn" value="8" onclick="Calculator.display.value += '8' ">
+            <input type="button" id="calcbtn" value="9" onclick="Calculator.display.value += '9' ">
+            <input type="button" id="calcbtn" style="background: blue;"  value="X"  onclick="Calculator.display.value += '*' ">
+         </div>
+          <div class="calcbody">
+           <input type="button" id="calcbtn" value="4"  onclick="Calculator.display.value += '4' ">
+           <input type="button" id="calcbtn" value="5" onclick="Calculator.display.value += '5' ">
+           <input type="button" id="calcbtn" value="6" onclick="Calculator.display.value += '6' ">
+           <input type="button" id="calcbtn" style="background: blue;"  value="-" onclick="Calculator.display.value += '-' ">
+       </div>
+       <div class="calcbody">
+         <input type="button" id="calcbtn" value="1" onclick="Calculator.display.value += '1' ">
+         <input type="button" id="calcbtn" value="2" onclick="Calculator.display.value += '2' ">
+        <input type="button" id="calcbtn" value="3" onclick="Calculator.display.value += '3' ">
+        <input type="button" id="calcbtn" style="background: blue;" value="+"  onclick="Calculator.display.value += '+' ">
+       </div>
+      <div class="calcbody">
+       <input type="button" id="calcbtn" value="0"  onclick="Calculator.display.value += '0' ">
+       <input type="button" id="calcbtn" value="." onclick="Calculator.display.value += '.' ">
+       <input type="button" id="calcbtn" value="DEL" onclick="Calculator.display.value = Calculator.display.value.slice (0,-1) ">
+       <input type="button" id="calcbtn" style="background:#ff5722;"  value="="  onclick="Calculator.display.value =eval(Calculator.display.value) ">
+      </div>
+  
+       </form>
+      </div>       
+      
+
+</body>
+</html>
